@@ -1,3 +1,6 @@
+// Required for static export (output: 'export' in next.config.mjs)
+export const dynamic = "force-static";
+
 export default function sitemap() {
     return [
         {
