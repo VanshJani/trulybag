@@ -21,6 +21,7 @@ const poppins = Poppins({
 export const metadata = {
   title: "TrulyBag - Fashion & Clothing Marketplace",
   description: "TrulyBag is an upcoming fashion and clothing e-commerce platform.",
+  image: "/images/thumbnail.jpg",
   openGraph: {
     title: "TrulyBag",
     description: "Fashion & Clothing Marketplace",
@@ -44,6 +45,16 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} h-full antialiased`}
     >
+      <head>
+        <meta name="description" content={metadata.description} />
+        <meta property="og:title" content={metadata.title} />
+        <meta property="og:description" content={metadata.description} />
+
+        <meta property="og:image" content={metadata.image} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="twitter:card" content={metadata.image} />
+      </head>
       <body className="min-h-full flex flex-col">
 
         {/* JSON-LD Schema — must be INSIDE body, not outside the component */}
