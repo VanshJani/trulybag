@@ -73,7 +73,7 @@ export default function RootLayout({ children }) {
         />
 
         {/* Google Analytics — replace G-XXXXXXXXXX with your real Measurement ID */}
-        <Script
+        {/* <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
           strategy="afterInteractive"
         />
@@ -84,7 +84,7 @@ export default function RootLayout({ children }) {
             gtag('js', new Date());
             gtag('config', 'G-XXXXXXXXXX');
           `}
-        </Script>
+        </Script> */}
 
         {children}
 
