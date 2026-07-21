@@ -73,8 +73,19 @@ export default function RootLayout({ children }) {
         />
 
         {/* Google Analytics — replace G-XXXXXXXXXX with your real Measurement ID */}
-        {/* <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+
+        {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-0C62NEW3MB"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)}
+          gtag('js', new Date());
+
+          gtag('config', 'G-0C62NEW3MB');
+        </script> */}
+
+        {/* ── Google Analytics ── */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-0C62NEW3MB"
           strategy="afterInteractive"
         />
         <Script id="google-analytics" strategy="afterInteractive">
@@ -82,9 +93,10 @@ export default function RootLayout({ children }) {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-XXXXXXXXXX');
+              gtag('config', 'G-0C62NEW3MB');
           `}
-        </Script> */}
+        </Script>
+
 
         {children}
 
