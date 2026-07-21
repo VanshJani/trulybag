@@ -81,6 +81,7 @@ export default function CommingSoon() {
         .cs-right {
           flex: 1;
           position: relative;
+          margin-top:60px;
         }
 
         .cs-people-image {
@@ -93,7 +94,7 @@ export default function CommingSoon() {
           .cs-root {
             height: auto;
             min-height: 100dvh;
-            flex-direction: column;
+            flex-direction: column-reverse;
           }
 
           /* Image on top, text below */
@@ -157,7 +158,11 @@ export default function CommingSoon() {
 
           .cs-logo-wrap img {
             width: 150px;
+            margin-bottom:30px
           }
+        .cs-content{
+        gap:30px
+        }
 
           .cs-label {
             font-size: 9px;
